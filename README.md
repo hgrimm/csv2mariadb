@@ -3,6 +3,7 @@
 [![Go](https://img.shields.io/badge/Go-1.27+-00ADD8?logo=go&logoColor=white)](https://go.dev/)
 [![MariaDB](https://img.shields.io/badge/MariaDB%20%2F%20MySQL-compatible-003545?logo=mariadb&logoColor=white)](https://mariadb.org/)
 [![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)](#how-it-works)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
 
 **Import German-style CSV exports (Excel, DATEV, ERP systems …) into a MariaDB table with one command.**
 
@@ -225,3 +226,11 @@ GRANT SELECT, INSERT, DELETE, CREATE, DROP, ALTER ON mydb.* TO 'importer'@'%';
 - CRLF or LF line endings
 - First line = column names
 - Completely empty rows are skipped
+
+## License
+
+Copyright 2026 Herwig Grimm
+
+Licensed under the [Apache License, Version 2.0](LICENSE). You may not use this project except in compliance with
+the License. Unless required by applicable law or agreed to in writing, the software is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
