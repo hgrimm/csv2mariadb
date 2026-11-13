@@ -1,0 +1,21 @@
+# csv2mariadb configuration — copy to csv2mariadb.conf (or ~/.csv2mariadb.conf)
+# and restrict access:  chmod 600 csv2mariadb.conf
+# Format: key = value. Lines starting with # or ; are comments.
+# The environment variable CSV2MARIADB_PASSWORD overrides "password".
+
+host      = 127.0.0.1
+port      = 3306
+#socket   = /run/mysqld/mysqld.sock   # if set, used instead of host/port
+user      = importer
+password  = secret
+database  = mydb
+
+# TLS: false | true (verify certificate) | skip-verify
+tls       = false
+#tls_ca   = /etc/mysql/ca.pem
+
+# Collation for new tables and the connection (must be utf8mb4_*)
+collation = utf8mb4_unicode_ci
+
+# Connect/handshake timeout (seconds or Go duration such as 15s)
+timeout   = 10
